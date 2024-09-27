@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #container{
+            height: 50vh;
+            border: 2px solid;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            width: 100%;
+        }
+        button{
+            padding: 10px;
+            background-color: blue;
+            margin: 10px;
+            position: relative;
+            left: 40vw;
+            border-radius: 10px;
+            color: white;
+            
+        }
+        #btn{
+            background-color: red;
+        }
+        h1{
+            text-align: center;
+        }
+        input{
+            position: relative;
+            left: 40vw;
+            padding: 10px;
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <h1>Advanced Java script</h1><br>
+    <input type="text" placeholder="enter a number" id="random"><br>
+    <button id="btn">Random Name</button>
+    <button id="start" onclick="alert('first enter name')">start quiz</button><br>
+    <button>view high scores</button><br>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
