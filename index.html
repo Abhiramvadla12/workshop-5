@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        #next,#next1,#prev1,#prev2,#next2,#next3,#prev3,#next4,#prev4{
+            width: 20vw;
+        }
+        #p1,#q1,#q2,#p2,#p3,#p4,#p5{
+            text-align: center;
+        }
         body{
             background-color: black;
         }
+        #q1op1:hover,#q1op3:hover,#q1op4:hover,#q1op2:hover{
+            background-color: yellow;
+        }
+        #q1op1:active,#q1op3:active,#q1op4:active{
+            background-color: red;
+        }
+        #q1op2:active{
+            background-color: greenyellow;
+        }
         #container{
-            height: 50vh;
+            height: 80vh;
             border: 2px solid;
             position: absolute;
             margin: auto;
@@ -18,40 +33,46 @@
             left: 0;
             right: 0;
             background-color: white;
-            width: 100%;
-
+            width: 60vw;
+            box-shadow: 2px 2px 10px white;
         }
         button{
-            padding: 10px;
+            padding: 5px;
             background-color: blue;
             margin: 10px;
             position: relative;
-            left: 40vw;
+            left: 10vw;
             border-radius: 10px;
             color: white;
+            width: 40vw;
+            font-size: xx-large;
             
         }
         #btn{
             background-color: red;
+            width: 20vw;
         }
         h1{
             text-align: center;
         }
         input{
             position: relative;
-            left: 40vw;
+            left: 10vw;
             padding: 10px;
             border-radius:10px;
+            width: 40vw;
         }
     </style>
 </head>
 <body>
     <div id="container">
         <h1>Advanced Java script</h1><br>
-        <input type="text" placeholder="enter a number" id="random"><br>
-        <button id="btn">Random Name</button>
-        <button id="start" onclick="alert('first enter name')">start quiz</button><br>
-        <button>view high scores</button><br>
+        <div id="inner">
+            <input type="text" placeholder="enter a number" id="random"><br>
+            <button id="btn">Random Name</button><br>
+            <button id="start" >start quiz</button><br>
+            <button>view high scores</button><br>
+        </div>
     </div>
     <script src="./index.js"></script>
 </body>
